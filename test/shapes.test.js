@@ -18,3 +18,12 @@ describe("Square", () => {
     expect(shape.render().toEqual("<polygon points='100,100 200,100 200,200 100,200' fill='green'/>"));
   })
 });
+
+// Define circle test function
+describe("Circle", () => {
+  it("should render a circle", () => {
+    const shape = new Circle();
+    shape.setColor("red");
+    expect(shape.render().toEqual("<circle cx='200' cy='100' r='100' fill='red'/>"));
+  })
+});
