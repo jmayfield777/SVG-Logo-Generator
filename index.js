@@ -56,3 +56,11 @@ function writeToFile(filename, data) {
   });
 
 }
+
+// function to initialize app
+function init() {
+
+  inquirer.prompt(questions)
+  .then (answers => writeToFile('logo.svg', generateSvg(answers)));
+
+}
