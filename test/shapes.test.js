@@ -5,8 +5,8 @@ const {Triangle, Square, Circle} = require('../lib/shapes.js');
 describe("Triangle", () => {
   it("should render a triangle", () => {
     const shape = new Triangle();
-    shape.setColor("blue");
-    expect(shape.render().toEqual("<polygon points='150, 18 244, 182 56, 182' fill='blue'/>"));
+    shape.setColor();
+    expect(shape.render()).toEqual(`<polygon points='150, 18 244, 182 56, 182' fill='${this.color}'/>`);
   })
 });
 
@@ -14,8 +14,8 @@ describe("Triangle", () => {
 describe("Square", () => {
   it("should render a square", () => {
     const shape = new Square();
-    shape.setColor("green");
-    expect(shape.render().toEqual("<polygon points='100,100 200,100 200,200 100,200' fill='green'/>"));
+    shape.setColor();
+    expect(shape.render()).toEqual(`<polygon points='100,100 200,100 200,200 100,200' fill='${this.color}'/>`);
   })
 });
 
@@ -23,7 +23,7 @@ describe("Square", () => {
 describe("Circle", () => {
   it("should render a circle", () => {
     const shape = new Circle();
-    shape.setColor("red");
-    expect(shape.render().toEqual("<circle cx='200' cy='100' r='100' fill='red'/>"));
+    shape.setColor();
+    expect(shape.render()).toEqual(`<circle cx='200' cy='100' r='100' fill='${this.color}'/>`);
   })
 });
