@@ -12,9 +12,8 @@ const shapeChoices = [
 ];
 
 // inquirer questions for users
-inquirer
-  .prompt([
-    {
+const questions = [
+    { 
       type: "input",
       name: "text",
       message: "Enter the text (up to 3 characters) you would like the logo to display: ",
@@ -35,7 +34,7 @@ inquirer
       message: "What shape would you like the logo to be?",
       choices: shapeChoices,
     },
-]);
+];
 
 // Define function to generate logo.svg
 function generateSvg(data) {
