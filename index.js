@@ -36,3 +36,16 @@ inquirer
       choices: shapeChoices,
     },
 ]);
+
+// Define function to generate logo.svg
+function generateSvg(data) {
+  // Define svg elements to be rendered
+  return `
+  <svg version="1.1" width="500" height="500" xmlns="http://www.w3.org/2000/svg">
+  ${data.shape}
+  <g>
+  <text x="150" y="130" text-anchor="middle" font-size="40" fill="${data.textColor}>${data.text}</text>
+  </g>
+  </svg>`;
+}
+
