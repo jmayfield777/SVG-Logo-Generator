@@ -49,3 +49,11 @@ function generateSvg(data) {
   </svg>`;
 }
 
+// Define function to writeFile
+function writeToFile(filename, data) {
+  
+  fs.writeFile(filename, data, (err) => {
+    err ? console.log(err) : console.log("Successfully generated SVG!");
+  });
+
+}
