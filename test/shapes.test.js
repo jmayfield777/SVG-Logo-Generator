@@ -1,5 +1,5 @@
 // Import shapes.js
-const {Triangle, Square, Circle} = require('../lib/shapes.js');
+const {Triangle, Square, Circle} = require("../lib/shapes.js");
 
 // Define triangle test function 
 describe("Triangle", () => {
