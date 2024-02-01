@@ -4,7 +4,7 @@
 
 This project is a command line application that generates SVG files for the user. The user must have inquirer@8.2.4 installed, and once it is, they will be asked a series of questions that will be used to create the new SVG file. The finished document will be complete with an opening and closing svg tag, a polygon tag if the user selects a square or triangle shaped logo, a circle tag if the user selects a circle shaped logo, and opening and closing text tags to hold the text the user would like the logo to display.
 
-[Link to example logo]()
+[Link to logo.svg](./logo.svg)
 
 ## Installation
 
@@ -23,14 +23,10 @@ npm i inquirer@8.2.4
 
 ## Usage
 
-Clone this repo and save it locally to your computer. Open terminal, git bash, or whichever command line interface you are using and navigate to the directory holding the index.js file. Make sure you have a blank "logo.svg" file which can be used to generate the logo. Run either command to start the application:
+Clone this repo and save it locally to your computer. Open terminal, git bash, or whichever command line interface you are using and navigate to the directory holding the index.js file. Make sure you have a blank "logo.svg" file which can be used to generate the logo. Run the following command to start the application:
 
 ```
 node index.js
-```
-
-```
-npm start
 ```
 
 Once you have answered all of the questions, "Successfully generated SVG!" will be logged to the console. Navigate to your SVG file and see that the file has been rendered from the answers you have given in the commmand line.

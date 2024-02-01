@@ -30,7 +30,7 @@ function writeToFile(filename, answers) {
   } else if (answers.shape === "Square") {
     shapeChoice = new Square();
     svgEl = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-    <polygon points='100,100 200,100 200,200 100,200' fill='${answers.color}'/>
+    <rect x="73" y="40" width="160" height="160" fill="${answers.color}"/>
     <g>
     <text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>
     </g>
@@ -38,7 +38,7 @@ function writeToFile(filename, answers) {
   } else if (answers.shape === "Circle") {
     shapeChoice = new Circle();
     svgEl = `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-    <circle cx='200' cy='100' r='100' fill='${answers.color}'/>
+    <circle cx="150" cy="115" r="80" fill='${answers.color}'/>
     <g>
     <text x="150" y="130" text-anchor="middle" font-size="40" fill="${answers.textColor}">${answers.text}</text>
     </g>
@@ -86,7 +86,7 @@ function questionPrompt() {
         return questionPrompt();
       } else {
         // call writeToFile()
-        writeToFile("./examples/logo.svg", answers);
+        writeToFile("./logo.svg", answers);
       }
     });
 
