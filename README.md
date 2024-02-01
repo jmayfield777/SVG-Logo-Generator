@@ -6,6 +6,8 @@ This project is a command line application that generates SVG files for the user
 
 [Link to logo.svg](./logo.svg)
 
+[Link to walkthrough video](https://drive.google.com/file/d/1TtTnLbAy_nLqIOhUgX7eugmyuNd1-39N/view)
+
 ## Installation
 
 To run this project, run the following command:
