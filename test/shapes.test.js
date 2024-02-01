@@ -15,7 +15,7 @@ describe("Square", () => {
   it("should render a square", () => {
     const shape = new Square();
     shape.setColor();
-    expect(shape.render()).toEqual(`<polygon points='100,100 200,100 200,200 100,200' fill='${this.color}'/>`);
+    expect(shape.render()).toEqual(`<rect x="73" y="40" width="160" height="160" fill="${this.color}"/>`);
   })
 });
 
@@ -24,6 +24,6 @@ describe("Circle", () => {
   it("should render a circle", () => {
     const shape = new Circle();
     shape.setColor();
-    expect(shape.render()).toEqual(`<circle cx='200' cy='100' r='100' fill='${this.color}'/>`);
+    expect(shape.render()).toEqual(`<circle cx="150" cy="115" r="80" fill='${this.color}'/>`);
   })
 });
