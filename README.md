@@ -8,6 +8,18 @@ This project is a command line application that generates SVG files for the user
 
 [Link to walkthrough video](https://drive.google.com/file/d/1TtTnLbAy_nLqIOhUgX7eugmyuNd1-39N/view)
 
+## Table of Contents
+
+ * [Installation](#installation)
+
+ * [Usage](#usage)
+
+ * [Credits](#credits)
+
+ * [License](#license)
+
+ * [Questions](#questions)
+
 ## Installation
 
 To run this project, run the following command:
@@ -48,3 +60,7 @@ https://github.com/elizabetholsavsky/SVG-logo-maker/blob/main/lib/questions.js (
 ## License
 
 ![License Badge](https://img.shields.io/badge/license-MIT-blue)
+
+## Questions
+
+If you have any questions about this repo, please feel free to contact me at my email : josh.mayfield45@gmail.com and Github profile : https://github.com/jmayfield777
